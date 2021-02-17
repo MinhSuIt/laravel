@@ -1,0 +1,14 @@
+chưa sửa $model->translate()->field thành function getTranslatedAttribute cho gọn
+chưa sủa các trường sort của table
+1chưa import export,dời import export sang repository
+chưa dời prepareDataForSelectTag từ appbasecontroller sang repository
+2chưa cache languages ở language middleware,sửa lại localobserver cho phù hợp với việc cache forever languages
+8sử dụng supervisor trên production cho queue
+4gửi mail khi đăng ký bằng queue tương tác với config
+5gửi notification khi tạo sản phẩm mới tương tác với config
+3gửi mail sản phẩm đc sale,thay đổi lại csdl của table coupons , thêm bảng trung gian
+6xóa sản phẩm
+7xem lại toàn bộ chức năng
+tập sử dụng telescope và horizon
+sử dụng socialite,breeze/fortify/jetstream(là kiểu spa ko học),passport,dusk
+viết unit test,integration test
