@@ -1,3 +1,5 @@
+git submodule add https://github.com/Laradock/laradock.git
+
 file1:
 #!/bin/bash
 sudo yum update -y
@@ -29,6 +31,8 @@ cp env-example .env
 sử dụng vi trong bash để sửa file .env(version php) tìm hiểu: run vi command script by bash  hoặc tự thay đổi bằng tay trước
 #
 file3:
+cd laravel
+cd laradock
 docker-compose up -d nginx mysql redis workspace 
 docker-compose exec workspace bash
 composer install
