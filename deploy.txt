@@ -1,6 +1,6 @@
-git submodule add https://github.com/Laradock/laradock.git
-
+tìm hiểu sử dụng vi trong bash để sửa file .env(version php) tìm hiểu: run vi command script by bash  hoặc tự thay đổi bằng tay trước
 file1:
+vi a.sh
 #!/bin/bash
 sudo yum update -y
 sudo yum install docker
@@ -9,6 +9,7 @@ exit
 
 
 file2:
+vi b.sh
 #!/bin/bash
 sudo systemctl enable docker
 sudo systemctl start docker
@@ -24,17 +25,26 @@ cd laravel
 sudo chmod -Rf 755 storage
 sudo mv .env-production .env
 
-#có thể phải laradock vào rồi up lên github
+làm tay tùy vào document mà làm
 git clone https://github.com/laradock/laradock.git
 cd laradock
 cp env-example .env
-sử dụng vi trong bash để sửa file .env(version php) tìm hiểu: run vi command script by bash  hoặc tự thay đổi bằng tay trước
-#
+vi .env
+sửa config php version
+
+thoát poderosa vào lại
 file3:
+vi c.sh
+#!/bin/bash
 cd laravel
 cd laradock
 docker-compose up -d nginx mysql redis workspace 
 docker-compose exec workspace bash
+
+làm tay
+comment nội dug hàm boot của appserviceprovider
 composer install
 php artisan migrate --seed
 exit
+
+chạy file bash file.sh
