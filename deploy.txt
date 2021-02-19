@@ -40,6 +40,7 @@ cd laravel
 cd laradock
 docker-compose up -d nginx mysql redis workspace 
 docker-compose exec workspace bash
+docker-compose exec mysql bash
 
 làm tay
 comment nội dug hàm boot của appserviceprovider
