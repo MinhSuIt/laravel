@@ -28,7 +28,7 @@ cd laradock
 cp env-example .env
 sử dụng vi trong bash để sửa file .env(version php) tìm hiểu: run vi command script by bash  hoặc tự thay đổi bằng tay trước
 #
-
+file3:
 docker-compose up -d nginx mysql redis workspace 
 docker-compose exec workspace bash
 composer install
