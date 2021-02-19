@@ -31,6 +31,7 @@
         "spatie/laravel-permission": "^3.16",
         "spatie/laravel-query-builder": "^3.3",
         "spatie/laravel-responsecache": "^6.6",
+        "tcg/voyager": "^1.4",
         "torann/currency": "^1.1",
         "tymon/jwt-auth": "^1.0"
     },

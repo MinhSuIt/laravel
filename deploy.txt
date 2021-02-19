@@ -22,11 +22,12 @@ cd laravel
 sudo chmod -Rf 755 storage
 sudo mv .env-production .env
 
-
+#có thể phải laradock vào rồi up lên github
 git clone https://github.com/laradock/laradock.git
 cd laradock
 cp env-example .env
 sử dụng vi trong bash để sửa file .env(version php) tìm hiểu: run vi command script by bash  hoặc tự thay đổi bằng tay trước
+#
 
 docker-compose up -d nginx mysql redis workspace 
 docker-compose exec workspace bash
